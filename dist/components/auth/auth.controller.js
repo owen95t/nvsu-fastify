@@ -119,10 +119,8 @@ exports.login = login;
  */
 const logout = async (req, reply) => {
     try {
-        return reply.status(http_constants_1.STANDARD.SUCCESS).setCookie('Authorization', '', {
-            httpOnly: true,
-            secure: false,
-        }).send({ message: 'Success!' });
+        return reply.status(http_constants_1.STANDARD.SUCCESS).setCookie('Authorization', '')
+            .send({ message: 'Success!' });
     }
     catch (e) {
         (0, errors_1.handleServerError)(reply, e);

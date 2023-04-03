@@ -21,6 +21,13 @@ const getOrdersByUserId = async (userId) => {
     return utils_1.prisma.order.findMany({
         where: {
             userId,
+        },
+        include: {
+            OrderItems: {
+                include: {
+                    product: true
+                }
+            }
         }
     });
 };
