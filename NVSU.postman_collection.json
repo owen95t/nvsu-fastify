@@ -1533,6 +1533,77 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Order History by User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/orders",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Order History by User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/orders",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "1131"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 15:08:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"orders\": [\n        {\n            \"id\": 1,\n            \"createdAt\": \"2023-04-03T09:34:25.170Z\",\n            \"updatedAt\": \"2023-04-03T09:40:01.330Z\",\n            \"userId\": 1,\n            \"status\": \"cancelled\",\n            \"OrderItems\": [\n                {\n                    \"id\": 1,\n                    \"orderId\": 1,\n                    \"productId\": 1,\n                    \"createdAt\": \"2023-04-03T09:34:25.170Z\",\n                    \"updatedAt\": \"2023-04-03T09:34:25.170Z\",\n                    \"product\": {\n                        \"id\": 1,\n                        \"name\": \"First Product\",\n                        \"details\": \"First Product Details\",\n                        \"price\": 0,\n                        \"createdAt\": \"2023-04-03T06:32:30.591Z\",\n                        \"updatedAt\": \"2023-04-03T06:32:30.591Z\"\n                    }\n                },\n                {\n                    \"id\": 2,\n                    \"orderId\": 1,\n                    \"productId\": 2,\n                    \"createdAt\": \"2023-04-03T09:34:25.170Z\",\n                    \"updatedAt\": \"2023-04-03T09:34:25.170Z\",\n                    \"product\": {\n                        \"id\": 2,\n                        \"name\": \"Second Product\",\n                        \"details\": \"Second Product Details\",\n                        \"price\": 2,\n                        \"createdAt\": \"2023-04-03T06:33:17.438Z\",\n                        \"updatedAt\": \"2023-04-03T06:33:17.438Z\"\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"createdAt\": \"2023-04-03T09:37:23.625Z\",\n            \"updatedAt\": \"2023-04-03T09:37:23.625Z\",\n            \"userId\": 1,\n            \"status\": \"confirmed\",\n            \"OrderItems\": [\n                {\n                    \"id\": 3,\n                    \"orderId\": 2,\n                    \"productId\": 3,\n                    \"createdAt\": \"2023-04-03T09:37:23.625Z\",\n                    \"updatedAt\": \"2023-04-03T09:37:23.625Z\",\n                    \"product\": {\n                        \"id\": 3,\n                        \"name\": \"Third Product\",\n                        \"details\": \"Third Product Details\",\n                        \"price\": 15,\n                        \"createdAt\": \"2023-04-03T06:33:38.939Z\",\n                        \"updatedAt\": \"2023-04-03T06:33:38.939Z\"\n                    }\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
 				}
 			]
 		}
