@@ -1,0 +1,1 @@
+{"version":3,"file":"products.interface.js","sourceRoot":"","sources":["../../src/interfaces/products.interface.ts"],"names":[],"mappings":";;;AAAA,+CAAiD;AAWpC,QAAA,mBAAmB,GAAG,cAAI,CAAC,MAAM,CAAC;IAC3C,IAAI,EAAE,cAAI,CAAC,MAAM,EAAE;IACnB,OAAO,EAAE,cAAI,CAAC,MAAM,EAAE;IACtB,KAAK,EAAE,cAAI,CAAC,MAAM,EAAE;CACvB,CAAC,CAAA"}
