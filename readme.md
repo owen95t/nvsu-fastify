@@ -16,6 +16,7 @@ This backend uses the following technologies
 ## To Run
 
 Run `nodemon` in root of folder to start the server. The project has already been built and the js files are in the `dist` folder.
+Nodemon will run from the files in the dist folder. 
 
 ## Routes
 
