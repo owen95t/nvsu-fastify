@@ -18,7 +18,7 @@ This backend uses the following technologies
 Run `nodemon` in root of folder to start the server. The project has already been built and the js files are in the `dist` folder.
 Nodemon will run from the files in the dist folder. 
 
-Once logged in, you must update the bearer authorization token received in the header. The token can be placed in the root folder of the Postman collection as
+Once logged in, take the  bearer authorization token received in the header from the log in API and place it in the root folder of the Postman collection as
 a global variable.
 
 ## Routes
