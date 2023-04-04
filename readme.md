@@ -18,6 +18,9 @@ This backend uses the following technologies
 Run `nodemon` in root of folder to start the server. The project has already been built and the js files are in the `dist` folder.
 Nodemon will run from the files in the dist folder. 
 
+Once logged in, you must update the bearer authorization token received in the header. The token can be placed in the root folder of the Postman collection as
+a global variable.
+
 ## Routes
 
 To view all routes and its inputs, please import Postman Collection from the file titled `NVSU.postman_collection.json`.
