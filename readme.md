@@ -28,4 +28,4 @@ The database used is SQLite. This is for ease of development. Prisma.js is the d
 
 ## ER Diagram
 
-The ER Diagram of the database can be viewed in the file titled `erd-diagram.png`
+The ER Diagram of the database can be viewed in the file titled `prisma-erd.jpg`
